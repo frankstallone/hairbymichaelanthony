@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+VERSION:2.0
+X-WR-CALNAME:Michael Anthony's in New Jersey
+METHOD:PUBLISH
+PRODID:-//Apple Inc.//iCal 4.0.4//EN
+BEGIN:VEVENT
+TRANSP:TRANSPARENT
+DTEND;VALUE=DATE:20110316
+UID:CEB550E1-1E15-4C06-B7CE-29C2B5650F40
+DTSTAMP:20110115T141705Z
+LOCATION:439 Broad Street Shrewsbury\, NJ 07702
+DESCRIPTION:Change this iCal Event from an 'all-day' event to the time o
+ f your appointment with an alarm so you don't forget. =)
+URL;VALUE=URI:http://hairbymichaelanthony.com/dates.html
+STATUS:CONFIRMED
+SEQUENCE:12
+SUMMARY:Michael Anthony's in New Jersey
+DTSTART;VALUE=DATE:20110315
+CREATED:20110115T141416Z
+END:VEVENT
+END:VCALENDAR
