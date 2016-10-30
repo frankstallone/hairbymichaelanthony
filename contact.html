@@ -26,15 +26,23 @@
 	<div id="content">
 		<div id="contact">
 			<h2>CONTACT</h2>
+            <p>Feel free to
+                <script language="javascript">
+                    var nic="iamfrankstallone";
+                    var at="@";
+                    var dom="gmail.com"
+                    document.write("<a href=mailto:"+nic+at+dom+">contact Michael via email today.</a>");
+                </script>
+            </p>
             <div id="message"></div><!-- This shows successful message -->
-            <form method="post" action="contact.php" name="contactform" id="contactform">
+            <form method="post" action="https://formspree.io/iamfrankstallone@email.com" name="contactform" id="contactform">
 
             <fieldset>
 
             <legend><p>Reaching out to hair designer Michael Anthony is now easier than ever. Simply fill in the contact form below to send Michael a message.</p></legend>
 
-            <label for=name accesskey=U> My name is</label>
-            <input name="name" type="text" id="name" size="30" value="" />
+            <label for="_name" accesskey="U"> My name is</label>
+            <input name="_name" type="text" id="name" size="30" value="" />
 
 			<label for=phone accesskey=P> and I am interested in working with Michael Anthony. Can you call me at</label>
 			<input name="phone" type="text" id="phone" size="30" value="" />
