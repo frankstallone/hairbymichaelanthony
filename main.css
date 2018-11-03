@@ -9,27 +9,45 @@
 ********************************/
 @font-face {
     font-family: 'DistrictThin';
-    src: url('fonts/distth__-webfont.eot');
-    src: local('☺'), url('fonts/distth__-webfont.woff') format('woff'), url('fonts/distth__-webfont.ttf') format('truetype'), url('fonts/distth__-webfont.svg#webfontJGvTMf9h') format('svg');
+    src: url("fonts/distth__-webfont.eot");
+    src: local("☺"), url("fonts/distth__-webfont.woff") format("woff"), url("fonts/distth__-webfont.ttf") format("truetype"), url("fonts/distth__-webfont.svg#webfontJGvTMf9h") format("svg");
     font-weight: normal;
     font-style: normal;
 }
-abbr, acronym { color: #9a9a9a }
-abbr:hover, acronym:hover { border-bottom: dashed 1px #9a9a9a }
+
+abbr, acronym {
+    color: #9a9a9a;
+}
+
+abbr:hover, acronym:hover {
+    border-bottom: dashed 1px #9a9a9a;
+}
+
 /***** Global Settings *****/
 html, body {
     border: 0;
     margin: 0;
     padding: 0;
 }
+
 body {
     font: 100%/1.75 'Courier New','Courier',monospace;
-    background: #000 url('images/topbg.jpg') repeat;
+    background: #000 url("images/topbg.jpg") repeat;
     color: #ccc;
 }
-div, ul, li, form { position: relative }
-.right { float: right }
-.left { float: left }
+
+div, ul, li, form {
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
 /***** Headings *****/
 h1, h1 a, h2, h3, h4, h5, h6 {
     font-family: 'DistrictThin', Trebuchet, sans-serif;
@@ -39,24 +57,29 @@ h1, h1 a, h2, h3, h4, h5, h6 {
     font-weight: normal;
     text-transform: uppercase;
 }
+
 h1 {
     letter-spacing: -1px;
     font-size: 2em;
 }
+
 h2 {
     padding: 0 0 1em 0;
     letter-spacing: 0px;
     font-size: 1.5em;
 }
+
 h3 {
-	padding: 0 0 1em 0;
+    padding: 0 0 1em 0;
     font-size: 1.3em;
     font-weight: 100;
 }
+
 h4 {
-	font-size: 1.2em;
-	font-weight: 100;
+    font-size: 1.2em;
+    font-weight: 100;
 }
+
 /***** Common Formatting *****/
 p, ul, ol, address {
     color: #9A9A9A;
@@ -64,72 +87,111 @@ p, ul, ol, address {
     padding: 0 0 1.25em 0;
     font-size: 1em;
 }
-div#about p, div#contact p, div#dates p { letter-spacing: -0.02em }
+
+div#about p, div#contact p, div#dates p {
+    letter-spacing: -0.02em;
+}
+
 blockquote {
     position: relative;
     font-size: 0.8em;
     width: 40%;
     background-color: rgba(49, 49, 59, 1);
-    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
+
 cite {
     font-size: 0.8em;
     font-style: italic;
 }
+
 blockquote.right {
     margin: 1.25em -4em 1.25em 1.25em;
     padding: 1.25em 1.25em 1.25em 1.25em;
 }
+
 blockquote.left {
     margin: 1.25em 1.25em 1.25em -4em;
     padding: 1.25em 1.25em 1.25em 1.25em;
 }
-blockquote.top { margin-top: -4em }
-img { border: 0 }
+
+blockquote.top {
+    margin-top: -4em;
+}
+
+img {
+    border: 0;
+}
+
 sup {
     position: relative;
     bottom: 0.3em;
     vertical-align: baseline;
 }
+
 sub, small {
     font-size: 0.7em;
     position: relative;
     vertical-align: baseline;
 }
+
 acronym, abbr {
     cursor: help;
     letter-spacing: 1px;
     border-bottom: 1px dashed;
 }
+
 /***** Links *****/
-a, a:link, a:visited, a:hover { text-decoration: none }
-a, a:link, a:visited { color: #ccc }
-a:hover, a:focus { color: #999 }
-p a:hover, p a:focus { text-decoration: underline }
+a, a:link, a:visited, a:hover {
+    text-decoration: none;
+}
+
+a, a:link, a:visited {
+    color: #ccc;
+}
+
+a:hover, a:focus {
+    color: #999;
+}
+
+p a:hover, p a:focus {
+    text-decoration: underline;
+}
+
 /***** Forms *****/
 form {
     margin: 0;
     padding: 0;
     display: inline;
 }
-label { cursor: pointer }
+
+label {
+    cursor: pointer;
+}
+
 /***** Tables *****/
 table {
     border: 0;
     margin: 0 0 1.25em 0;
     padding: 0;
 }
-    table tr td { padding: 2px }
+
+table tr td {
+    padding: 2px;
+}
+
 /***** Clearfix *****/
 /* add to floating elements which should not float afterthem */
 * html .clearfix {
     height: 1%; /* IE5-6 */
 }
+
 * + html .clearfix {
     display: inline-block; /* IE7not8 */
 }
+
 .clearfix:after {
     /* FF, IE8, O, S, etc. */
     content: ".";
@@ -138,112 +200,130 @@ table {
     clear: both;
     visibility: hidden;
 }
+
 /***** Structure ******/
 /***** Header *****/
 div#header {
-	position: relative;
-	z-index:0;
+    position: relative;
+    z-index: 0;
     width: 100%;
     height: 150px;
-    background: transparent url('images/divider-header.jpg') bottom repeat-x;
+    background: transparent url("images/divider-header.jpg") bottom repeat-x;
 }
+
 div#header-logo {
-	position: absolute;
-	z-index: 1;
-	background: transparent url('images/logo-header-bg.png') top center no-repeat;
-	width: 100%;
-	height: 140px;
+    position: absolute;
+    z-index: 1;
+    background: transparent url("images/logo-header-bg.png") top center no-repeat;
+    width: 100%;
+    height: 140px;
 }
-    div#header h1 { 
-    	text-align: center;
-    	position: relative;
-    	z-index: 2;
-    }
-        div#header h1 a {
-            color: #ccc;
-            font-size: 60px;
-            text-shadow: 2px 2px 2px #000;
-        }
+
+div#header h1 {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+div#header h1 a {
+    color: #ccc;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px #000;
+}
+
 div#header h2 {
-	position: relative;
-	z-index: 2;
-	text-align: center;
-	padding: 0;
-	margin: -40px 0 0 0;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0;
+    margin: -40px 0 0 0;
 }
+
 /***** Navigation *****/
 ul#navigation {
-	position: relative;
-	z-index: 3;
+    position: relative;
+    z-index: 3;
     display: block;
     width: 960px;
     margin: 10px auto 0;
     list-style: none;
 }
-    ul#navigation li {
-        display: inline;
-        margin-right: 20px;
-    }
-        ul#navigation li a {
-            font-family: 'DistrictThin', sans-serif;
-            text-shadow: 2px 2px 2px #000;
-            font-size: 1.1em;
-            /*background: transparent url('favicon.png') center right no-repeat;
-            padding-right: 20px;*/
-        }
+
+ul#navigation li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul#navigation li a {
+    font-family: 'DistrictThin', sans-serif;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 1.1em;
+
+    /*background: transparent url('favicon.png') center right no-repeat;
+    padding-right: 20px;*/
+}
+
 /***** Content Area *****/
 div#content {
     width: 100%;
-    background: transparent url('images/content-bg.jpg') repeat;
+    background: transparent url("images/content-bg.jpg") repeat;
     padding: 50px 0;
 }
+
 div#slide-container {
     width: 960px;
     margin: 0 auto;
     position: relative;
 }
+
 /***** Scissors on About Page *****/
 div#slide-about {
-    background: transparent url('images/scissors.png') no-repeat;
+    background: transparent url("images/scissors.png") no-repeat;
     position: absolute;
     bottom: -120px;
     left: -20px;
     width: 601px;
     height: 263px;
 }
+
 /***** Scissors on About Page *****/
 div#slide-contact {
-    background: transparent url('images/comb.png') no-repeat;
+    background: transparent url("images/comb.png") no-repeat;
     position: absolute;
     bottom: -50px;
     right: 50px;
     width: 326px;
     height: 157px;
 }
+
 div#footer {
-    background: transparent url('images/divider-footer.jpg') top repeat-x;
+    background: transparent url("images/divider-footer.jpg") top repeat-x;
     width: 100%;
     float: left;
 }
-    div#footer small {
-        padding-top: 20px;
-        display: block;
-        height: auto;
-        width: 960px;
-        margin: 0 auto;
-        text-shadow: 2px 2px 2px #000;
-        color: #999;
-    }
-        div#footer small a {
-            background: transparent url('favicon.png') center left no-repeat;
-            padding-left: 20px;
-            text-decoration: underline;
-            color: #999;
-        }
-        div#footer small a:hover {
-            text-decoration: none;
-            color: #ccc;
-        }
+
+div#footer small {
+    padding-top: 20px;
+    display: block;
+    height: auto;
+    width: 960px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px #000;
+    color: #999;
+}
+
+div#footer small a {
+    background: transparent url("favicon.png") center left no-repeat;
+    padding-left: 20px;
+    text-decoration: underline;
+    color: #999;
+}
+
+div#footer small a:hover {
+    text-decoration: none;
+    color: #ccc;
+}
+
 /***** Slider: only the following lines are necceassary for slider styling *****/
 .slider {
     height: 480px; /*this changes the height of the image slider*/
@@ -252,39 +332,50 @@ div#footer {
     position: relative;
     background: #fff url(images/layout/preload.gif) center center no-repeat;
     margin: 0 auto;
-    -moz-box-shadow: 0px 0px 40px rgba(0,0,0,0.7);
-    -webkit-box-shadow: 0px 0px 40px rgba(0,0,0,0.7);
-    box-shadow: 0px 0px 40px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7);
 }
-    .slider li, .slider .featured {
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-.js_active .slider li, .js_active .slider .featured { display: none }
+
+.slider li, .slider .featured {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.js_active .slider li, .js_active .slider .featured {
+    display: none;
+}
+
 .slider img, .slider a img, .slider a {
     border: none;
     text-decoration: none;
 }
+
 .slidecontrolls {
     margin: 20px auto 0 auto;
     position: relative;
     float: left;
 }
-    .slidecontrolls a {
-        height: 20px;
-        width: 18px;
-        display: block;
-        cursor: pointer;
-        background: transparent url(images/layout/controlls.gif) center bottom no-repeat;
-        float: left;
-        outline: none;
-    }
-    .slidecontrolls a:hover, .slidecontrolls .active_item { background: transparent url(images/layout/controlls.gif) center top no-repeat }
+
+.slidecontrolls a {
+    height: 20px;
+    width: 18px;
+    display: block;
+    cursor: pointer;
+    background: transparent url(images/layout/controlls.gif) center bottom no-repeat;
+    float: left;
+    outline: none;
+}
+
+.slidecontrolls a:hover, .slidecontrolls .active_item {
+    background: transparent url(images/layout/controlls.gif) center top no-repeat;
+}
+
 .feature_excerpt {
     width: 780px;
     position: absolute;
@@ -299,88 +390,113 @@ div#footer {
     background: #000;
     color: #fff;
 }
-    .feature_excerpt strong {
-        display: block;
-        font-size: 15px;
-        padding-bottom: 3px;
-    }
+
+.feature_excerpt strong {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
 /***** About Section *****/
 div#about, div#contact, div#dates {
     width: 620px;
-    -moz-box-shadow: 0px 0px 40px rgba(0,0,0,0.7);
-    -webkit-box-shadow: 0px 0px 40px rgba(0,0,0,0.7);
-    box-shadow: 0px 0px 40px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7);
     padding: 20px;
     margin: 0 auto;
 }
-div#about { background-color: rgba(33,33,40,0.8); }
+
+div#about {
+    background-color: rgba(33, 33, 40, 0.8);
+}
+
 /***** Dates Section ******/
-div#dates { background-color: rgba(40,33,40,0.8); }
+div#dates {
+    background-color: rgba(40, 33, 40, 0.8);
+}
+
 div#dates small#larger-map a {
-	font-style: italic;
+    font-style: italic;
 }
+
 ul#dates, ul.error_messages {
-	padding: 0 0 1.25em 2em;
+    padding: 0 0 1.25em 2em;
 }
+
 ul#dates li, ul.error_messages li {
-	color: #CCCCCC;
+    color: #CCCCCC;
 }
+
 ul#dates li a,
 ul#dates li a:visited {
-	font-size: 100%;
-	float: right;
-	margin-right: 10px;
-	font-style: italic;
+    font-size: 100%;
+    float: right;
+    margin-right: 10px;
+    font-style: italic;
 }
+
 ul#dates li a:hover,
 ul#dates li a:focus {
-	text-decoration: underline;
+    text-decoration: underline;
 }
+
 a[href$='.ics'] {
-	display:inline-block;
-	padding-left:20px;
-	line-height:18px;
-	background:transparent url(/images/ical.gif) center left no-repeat;
+    display: inline-block;
+    padding-left: 20px;
+    line-height: 18px;
+    background: transparent url(/images/ical.gif) center left no-repeat;
 }
+
 /***** Form Styles *****/
 div#dates fieldset {
-	margin: 0 0 1em 0;
+    margin: 0 0 1em 0;
 }
+
 div#dates h1 {
-	margin:  0 0 0.4em 0;
+    margin: 0 0 0.4em 0;
 }
+
 div#dates input#email {
-	width: 250px;
+    width: 250px;
 }
+
 div#dates input#name,
- div#dates input#phone,
-  div#dates input#email,
-   div#dates textarea#comments,
-    div#dates input#verify {
-	background-color: rgba(40,33,40,0.8);
+div#dates input#phone,
+div#dates input#email,
+div#dates textarea#comments,
+div#dates input#verify {
+    background-color: rgba(40, 33, 40, 0.8);
 }
+
 div#dates input#name:hover,
- div#dates input#phone:hover,
-  div#dates input#email:hover,
-   div#dates textarea#comments:hover,
-    div#dates input#verify:hover {
+div#dates input#phone:hover,
+div#dates input#email:hover,
+div#dates textarea#comments:hover,
+div#dates input#verify:hover {
     background-color: #3c3b2c;
 }
+
 div#dates input#name:focus,
- div#dates input#phone:focus,
-  div#dates input#email:focus,
-   div#dates textarea#comments:focus,
-    div#dates input#verify:focus {
+div#dates input#phone:focus,
+div#dates input#email:focus,
+div#dates textarea#comments:focus,
+div#dates input#verify:focus {
     background-color: #2c3c2e;
 }
+
 /***** Contact Form Error Messages *****/
 div.error_message {
-	background-color: #431110;
-	margin: 0 0 1em 0;
-	padding: 1em 0 0 1em;
+    background-color: #431110;
+    margin: 0 0 1em 0;
+    padding: 1em 0 0 1em;
 }
+
 /***** Contact Section ******/
-div#contact { background-color: rgba(40,33,33,0.8); }
+div#contact {
+    background-color: rgba(40, 33, 33, 0.8);
+}
+
 /***** Contact Form *****/
 fieldset {
     border: none;
@@ -388,30 +504,37 @@ fieldset {
     padding: 0;
     font-size: 1em;
     color: #9A9A9A;
-    display: table-column; 
+    display: table-column;
 }
-    fieldset p { font-size: 1em; white-space: pre-wrap; }
+
+fieldset p {
+    font-size: 1em;
+    white-space: pre-wrap;
+}
+
 input#name:hover,
- input#email:hover,
-  input#phone:hover,
-   textarea#comments:hover,
-    input#verify:hover { 
+input#email:hover,
+input#phone:hover,
+textarea#comments:hover,
+input#verify:hover {
     background-color: #3c3b2c;
 }
+
 input#name:focus,
- input#email:focus,
-  input#phone:focus,
-   textarea#comments:focus,
-    input#verify:focus { 
+input#email:focus,
+input#phone:focus,
+textarea#comments:focus,
+input#verify:focus {
     background-color: #2c3c2e;
 }
+
 input#name,
- input#phone,
-  input#email,
-   textarea#comments,
-    input#verify {
+input#phone,
+input#email,
+textarea#comments,
+input#verify {
     font: 0.8em 'Courier New','Courier',monospace;
-    background-color: rgba(40,33,33,0.8);
+    background-color: rgba(40, 33, 33, 0.8);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -419,18 +542,37 @@ input#name,
     color: #ccc;
     margin: 0 5px 0 0;
 }
-input#name { width: 200px }
-input#phone { width: 135px }
-input#email { width: 200px }
+
+input#name {
+    width: 200px;
+}
+
+input#phone {
+    width: 135px;
+}
+
+input#email {
+    width: 200px;
+}
+
 textarea#comments {
     width: 100%;
     font-size: 0.9em;
 }
+
 input#verify {
     width: 50px;
     height: 20px;
 }
-fieldset p { display: block }
-fieldset label img { vertical-align: middle }
-fieldset i { font-size: 1.5em }
 
+fieldset p {
+    display: block;
+}
+
+fieldset label img {
+    vertical-align: middle;
+}
+
+fieldset i {
+    font-size: 1.5em;
+}
